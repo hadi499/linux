@@ -92,5 +92,5 @@ sudo chmod -R 777 nama_folder   -->hak akses penuh folder beserta isinya
 sudo fuser -k 8000/tcp
 
 #Environment Variabel bash
-Salah satu keistimeaan BASH adalah, dia punya environment variabel. Anda bisa melihat semua variabel tersebut dengan perintah set
-$ set | less
+
+set | less
