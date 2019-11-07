@@ -1,0 +1,15 @@
+#menjalankan mongo
+
+sudo service mongod start
+sudo service mongod stop
+sudo service mongod restart
+
+
+
+#Remove Packages.
+sudo apt-get purge mongodb-org*
+
+#Remove Data Directories.
+
+sudo rm -r /var/log/mongodb
+sudo rm -r /var/lib/mongodb
