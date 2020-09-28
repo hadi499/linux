@@ -1,7 +1,10 @@
 E: Sub-process /usr/bin/dpkg returned an error code (1)
 sudo dpkg --configure -a
 sudo apt-get install -f
-
+# install pip python 2.7
+curl https://bootstrap.pypa.io/get-pip.py --output get-pip.py
+sudo python2 get-pip.py
+pip2 --version
 
 # memuat ulang bashrc
 source ~/.bashrc
