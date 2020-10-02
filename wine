@@ -1,0 +1,4 @@
+sudo dpkg --add-architecture i386
+sudo apt update
+sudo apt install wine32 wine64
+wine --version
