@@ -1,0 +1,11 @@
+sudo apt-get install cups cups-client "foomatic-db"
+sudo /usr/sbin/adduser hadi(username root) lpadmin
+sudo service cups restart
+sudo systemctl enable cups
+sudo systemctl start cups
+
+Configuring Printer
+Open browser and type: http://127.0.0.1:6
+Administrators — Adding Printers and Classes — Add printer.
+Type your username(system account) and password(system password)
+Choose your printer
