@@ -8,7 +8,7 @@ pip2 --version
 
 # update grub ubuntu
 Mengecek Menu entry di /boot/grub/grub.cfg
-Mengedit Default Grub di /etc/default/grub grub-
+Mengedit Default Grub di /etc/default/grub
 sudo update-grub
 
 # memuat ulang bashrc
