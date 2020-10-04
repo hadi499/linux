@@ -1,0 +1,8 @@
+Mengecek Menu entry di
+gedit /boot/grub/grub.cfg
+
+Mengedit Default Grub
+sudo gedit /etc/default/grub 
+  atau
+sudo nano /etc/default/grub
+sudo update-grub
