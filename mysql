@@ -1,0 +1,77 @@
+
+CREATE DATABASE mahasiswa;
+
+USE mahasiswa;
+
+CREATE TABLE mata_kuliah (kode_matkul CHAR(5) PRIMARY KEY, 
+nama_matkul VARCHAR(50) NOT NULL, jumlah_SKS TINYINT UNSIGNED DEFAULT '2',
+nama_jurusan VARCHAR(50));
+select * from mata_kuliah;
+
+Query INSERT untuk menambahkan data kedalam Tabel MySQL
+
+INSERT INTO mata_kuliah VALUES ('KIMDA','Kimia Dasar',2,' Kimia');
+INSERT INTO mata_kuliah VALUES
+('MMDAS','Matematika Dasar',4,'Matematika'), 
+('JRKOM','Jaringan Komputer',2,'Ilmu Komputer');
+
+select * from mata_kuliah;
+
+Cara Menghapus Baris dari Tabel MySQL (DELETE)
+
+DELETE from daftar_dosen WHERE nama_dosen = 'Sabrina Sari';
+DELETE FROM daftar_dosen;
+
+Cara Mengubah Data Tabel Menggunakan Query UPDATE
+UPDATE daftar_dosen SET no_hp ='085298710065'WHERE nama_dosen='Sabrina Sari';
+
+Cara Mengupdate Lebih dari 1 Baris
+UPDATE daftar_dosen SET alamat ='Surabaya' WHERE
+nama_dosen='Rubin Hadi' OR NIP_dosen='1080432007'
+OR no_hp='0812345234';
+
+
+
+Cara Membuat User Baru dalam MySQL
+CREATE USER 'ilkom_admin';
+CREATE USER ilkom_admin2 IDENTIFIED BY 'rahasia';
+
+Cara Membuat User MySQL dengan batasan IP address
+CREATE USER 'ilkom_admin3'@'192.168.0.4' IDENTIFIED by 'r4hasia';
+
+Cara menghapus User MySQL
+DROP USER ilkom_admin;
+DROP USER 'ilkom_admin3'@'192.168.0.4';
+
+Cara Membuat Hak Akses (Privileges) User MySQL (GRANT)
+CREATE USER 'ilkom_admin'@'localhost' IDENTIFIED BY 'r4hasia';
+GRANT SELECT ON universitas.mahasiswa_ilkom TO'ilkom_admin'@'localhost';
+
+Cara Memberikan Hak Akses Untuk Seluruh Tabel
+CREATE USER 'mahasiswa'@'localhost' IDENTIFIED BY 'r4hasia';
+GRANT SELECT ON universitas.* TO 'mahasiswa'@'localhost';
+
+Cara Memberikan Seluruh Hak Akses (query GRANT ALL)
+
+CREATE USER 'ekonomi_admin'@'localhost' IDENTIFIED BY 'r4hasia';
+GRANT ALL ON universitas.mahasiswa_ekonomi TO 'ekonomi_admin'@'localhost';
+
+Cara Memberikan Hak Akses MySQL Pada Level Kolom
+
+GRANT SELECT (nama,umur) ON universitas.mahasiswa_ilkom TO 'tamu_ilkom'@'localhost';
+GRANT DROP (nama,umur) ON universitas.mahasiswa_ilkom TO 'tamu_ilkom'@'localhost';
+GRANT DELETET (nama,umur) ON universitas.mahasiswa_ilkom TO 'tamu_ilkom'@'localhost';
+GRANT UPDATE (nama,umur) ON universitas.mahasiswa_ilkom TO 'tamu_ilkom'@'localhost';
+
+Merubah password
+SET PASSWORD FOR ilkom_admin@'localhost' = PASSWORD('s3cret');
+
+
+
+
+
+
+
+
+
+
