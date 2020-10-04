@@ -1,0 +1,3 @@
+download from https://github.com/a-atalla/tuxcut
+systemctl start tuxcutd
+jalankan aplikasinya
