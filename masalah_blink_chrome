@@ -1,0 +1,32 @@
+So you have to enable smooth scrolling. Copy and paste the text below in Chrome address bar :
+
+chrome://flags/#smooth-scrolling
+
+Method #2 Chrome Flickers
+Step 1 - Run the following command :
+  sudo nano /usr/share/applications/google-chrome.desktop
+Step 2 - Scroll down until you get Exec line
+Step 3 - Then add these two parameters :
+--disable-gpu-driver-bug-workarounds --enable-native-gpu-memory-buffers
+
+So it should be look like this :
+Exec=/usr/bin/google-chrome-stable –disable-gpu-driver-bug-workarounds –enable-native-gpu-memory-buffers %U
+
+Run the command below to create Intel configuration file :
+  sudo nano /usr/share/X11/xorg.conf.d/20-intel.conf
+Then add this line :
+//
+Section "Device"
+Identifier  "Intel Graphics"
+Driver      "intel"
+Option      "AccelMethod"  "sna"
+Option      "TearFree"    "true"
+Option      "DRI"    "3"
+EndSection
+//
+
+Step 5 - Open chrome://flags/ in address bar and enable :
+  Zero-copy rasterizer
+  Override Software Rendering List
+ 
+ Step 6 - Now open Chrome settings > Advance Settings > System > enable Use hardware acceleration when available
