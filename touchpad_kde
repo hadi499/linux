@@ -1,0 +1,13 @@
+sudo gedit /usr/share/X11/xorg.conf.d/40-libinput.conf
+
+tambahkan [ Option "Tapping" "True" ]
+
+Section "InputClass"
+        Identifier "libinput touchpad catchall"
+        MatchIsTouchpad "on"
+        Option "Tapping" "True"
+        MatchDevicePath "/dev/input/event*"
+        Driver "libinput"
+EndSection
+
+reboot
