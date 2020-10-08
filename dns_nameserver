@@ -1,0 +1,18 @@
+$ sudo apt update
+$ sudo apt install resolvconf
+$ sudo systemctl status resolvconf.service
+$ sudo systemctl start resolvconf.service
+$ sudo systemctl enable resolvconf.service
+$ sudo systemctl status resolvconf.service
+
+Set Permanent DNS Nameservers in Ubuntu and Debian
+Next, open the /etc/resolvconf/resolv.conf.d/head configuration file.
+
+$sudo nano /etc/resolvconf/resolv.conf.d/head
+
+and add the following lines in it:
+
+nameserver 8.8.8.8 
+nameserver 8.8.4.4
+
+$ sudo systemctl start resolvconf.service
