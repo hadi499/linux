@@ -1,0 +1,2 @@
+sudo rm /etc/localtime
+sudo ln -sr /usr/share/zoneinfo/Asia/Jakarta /etc/localtime
