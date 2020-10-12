@@ -1,0 +1,60 @@
+Format Perintah tar
+
+c ➡ (create) membuat file tar. File ini belum di compress.
+x ➡ (extract) ektrak dari file tar.
+z ➡ (zip) membuat file yang tercompress dengan program gzip.
+j ➡ (bz2) membuat file yang tercompress dengan program bz2.
+x ➡ (extract) mengekstrak file tar.
+v ➡ (verbose) menampilkan progress pembuatan file
+t ➡ (list) menampilkan daftar file dalam file tar.
+f ➡ (file) menunjuk pada nama file tar
+p ➡ (preserve) menjaga file permission saat membuat dan mengekstrak file tar.
+
+Membuat file arsip dengan nama file.tar dari file1.txt TANPA COMPRESI
+tar -cvf file.tar file1.txt
+
+Membuat file arsip bernama file.tar.gz dari file1.txt DENGAN COMPRESI gzip.
+tar -czvf file.tar.gz file1.txt
+
+Membuat file arsip bernama folder.tar.gz dari folder DENGAN COMPRESI gzip.
+tar -czvf folder.tar.gz ./folder
+untuk meng-compress folder harus diberikan path ke folder itu. ./ artinya current folder.
+
+Membuat file arsip bernama file1.tar.bz dari file1.txt DENGAN COMPRESI bzip2.
+tar cjvf file1.tar.bz file1.txt
+
+Membuat file arsip bernama folder.tar.bz dari folder DENGAN COMPRESI bzip2
+tar cjvf folder.tar.bz ./folder
+
+Melihat isi file1.tar tanpa mengekstrak
+tar -tf file1.tar
+
+Melihat isi file COMPRESI gzip dengan nama file1.tar.gz tanpa mengekstrak.
+tar -tf file1.tar.gz
+
+Melihat isi file COMPRESI dengan bzip2 dengan nama file1.tar.bz tanpa mengekstrak
+tar -tf file1.tar.bz
+
+Ekstrak file arsip TANPA COMPRESI dengan nama file1.tar
+tar -xvf file1.tar 
+
+Ekstrak file arsip dengan COMPRESI gzip dengan nama file1.tar.gz
+tar -xzvf file1.tar.gz
+jika format file adalah .bz atau COMPRESI dengan bzip2, maka option z pada perintah di atas, diganti dengan huruf j.
+
+Ekstrak file arsip dengan COMPRESI gzip bernama file1.tar.gz ke folder ekstrak.
+tar -xzvf file1.tar.gz -C ./ekstrak
+-C adalah option untuk ekstrak ke folder tertentu. ./ekstrak artinya folder ekstrak berada di dalam current folder.
+
+Ekstrak file tertentu bernama file3-1.txt dari file arsip folder.tar.gz. Perintahnya adalah
+tar -xzvf folder.tar.gz folder/file3-1.txt
+
+Menambahkan waktu (time stamp) secara otomatis pada nama file saat file archive dibuat.
+Misalnya membuat file dengan compressi gzip bernama backup.tar.gz untuk folder /var/www/
+sudo tar -czvf "$(date '+%Y-%m-%d-%H.%M.%S').backup-file.tar.gz" /var/www/
+untuk menambahkan tanggal pada nama file, maka perlu sedikit modifikasi Bash command. "$( <command> )" 
+digunakan untuk memodifikasi perintah bash.
+date adalah fungsi untuk menambahkan tanggal. %Y-%m-%d-%H.%M.%S 
+adalah format tanggal yaitu tahun-bulan-tanggal-jam.menit.detik. 
+Perlu diperhatikan folder /var/www/ biasanya memerlukan akses root sehingga perlu tambahan perintah sudo.
+
