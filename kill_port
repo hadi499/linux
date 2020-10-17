@@ -1,0 +1,5 @@
+# Mematikan Port yang sudah digunakan
+
+sudo fuser -k 8000/tcp
+
+8000 adalah port yang digunakan.
