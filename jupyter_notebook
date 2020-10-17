@@ -11,3 +11,7 @@ aplikasi terinstall di folder ~/.local/bin
 
 tambahkan alias ke bashrc atau zshrc 
 alias jupyter="python3 ~/.local/bin/jupyter-notebook"
+
+
+# uninstall jupyter notebook
+python3 -m pip uninstall -y jupyter jupyter_core jupyter-client jupyter-console notebook qtconsole nbconvert nbformat
