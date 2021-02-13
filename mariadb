@@ -5,3 +5,56 @@ GRANT ALL ON *.* TO 'admin'@'localhost' IDENTIFIED BY 'password' WITH GRANT OPTI
 FLUSH PRIVILEGES;
 
 sudo systemctl status mariadb
+
+create database phpdasar;
+use phpdasar;
+create table mahasiswa (
+	id int primary key auto_increment,
+	nrp varchar(10),
+	nama varchar(100),
+	email varchar(100),
+	jurusan varchar(100),
+	gambar varchar(100)
+	);
+
+show tables;
+describe mahasiswa;
+insert into mahasiswa values (null, '234566', 'Uzumaki Naruto', 'naruto@konoha.id', 'Kimia', 'Naruto_Uzumaki.png');
+
+create table user (
+	id int primary key auto_increment,
+	username varchar(50),
+	password varchar(255)
+	);
+
+select * from employees;
+select lastname, firtname from employees;
+
+
+
+create table produk(
+	id int primary key auto_increment,	
+	nama varchar(50),
+	harga varchar(50)
+	);
+insert into produk values(null, "Indomie", “Rp.2500”);
+
+
+
+
+
+
+EDIT TABLE
+
+---menambah kolom--
+alter table mahasiswa add kota_kelahiran varchar(50);
+
+--mengubah nama kolom--
+alter table mahasiswa cange column kota_kelahiran kota_asal varchar(50);
+
+-- menghapus kolom--
+alter table mahasiswa drop column kota_asal;
+
+--merubah nama table--
+alter table mahasiswa rename to siswa;
+
