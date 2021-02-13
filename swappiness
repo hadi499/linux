@@ -1,0 +1,7 @@
+sudo vim /etc/sysctl.conf
+
+Di bagian bawah, Anda dapat menambahkan:
+
+vm.swappiness=10
+
+sudo sysctl -p
