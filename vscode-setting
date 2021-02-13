@@ -1,0 +1,12 @@
+"workbench.startupEditor": "newUntitledFile",
+"workbench.iconTheme": "material-icon-theme",
+"editor.minimap.enabled": false,
+"editor.fontSize": 16,
+"terminal.integrated.fontSize": 15,
+"editor.lineHeight": 30,
+"editor.formatOnSave": true,
+"open-in-browser.default": "chrome",
+"terminal.integrated.fontFamily": "MesloLGM Nerd Font",
+"emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+ }
