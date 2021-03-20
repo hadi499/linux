@@ -1,0 +1,4 @@
+ubuntu 20.04 / 20.10 
+
+sudo add-apt-repository ppa:giuspen/ppa
+sudo apt install cherrytree
