@@ -1,0 +1,13 @@
+docker images    ***melihat image docker***
+
+
+docker container ls      ***running container***
+docker container --all   ***melihat semua container***
+
+docker container create --name mongoserver1 -p 8080:27017 mongo:4.1    ***8080 untuk diakses dari luar, 27017 port docker***
+docker container start mongoserver1  
+
+docker container rm mongoserver1
+docker image rm mongo:4.1
+
+docker run --name some-postgres2 -p 8080:5432 -e POSTGRES_PASSWORD=mysecretpassword -d postgres
