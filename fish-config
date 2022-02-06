@@ -1,0 +1,4 @@
+buat file fish.config
+
+set -g -x fish_greeting ''
+set -U fish_user_paths /home/hadi/dev/tools/jdk-15.0.2/bin
