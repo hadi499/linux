@@ -1,0 +1,10 @@
+BASH
+chsh -s /bin/bash
+
+FISH
+chsh -s /usr/bin/fish 
+
+ZSH
+chsh -s /usr/bin/zsh 
+
+Log out
