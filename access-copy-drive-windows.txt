@@ -1,0 +1,1 @@
+sudo ntfsfix /dev/sdb2 [nama_drive windows]
