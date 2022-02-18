@@ -116,4 +116,5 @@ if ! shopt -oq posix; then
   fi
 fi
 
+# untuk tombol home end tmux dan vim
 export TERM=tmux-256color
