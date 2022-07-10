@@ -1,7 +1,5 @@
 #!/bin/bash
 bluetoothctl
-sleep 5
-echo "connect 41:42:C8:CA:B6:90" | bluetoothctl
-sleep 5
+sleep 3
 echo "connect 41:42:C8:CA:B6:90" | bluetoothctl
 exit
