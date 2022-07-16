@@ -1,3 +1,4 @@
+untuk neovim set di .config/nvim/init.vim
 
 call plug#begin()
 
@@ -21,7 +22,7 @@ set smarttab
 set cindent
 set tabstop=2
 set shiftwidth=2
-
+set noswapfile
 
 " setting colorscheme
 set t_Co=256
