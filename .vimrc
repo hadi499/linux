@@ -23,6 +23,8 @@ set cindent
 set tabstop=2
 set shiftwidth=2
 set noswapfile
+set mouse=a
+set clipboard=unnamedplus
 
 " setting colorscheme
 set t_Co=256
