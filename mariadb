@@ -1,10 +1,14 @@
 sudo apt install mariadb-server
 sudo mysql_secure_installation
+sudo systemctl status mariadb
+
 sudo mariadb -u root -p
+
 GRANT ALL ON *.* TO 'admin'@'localhost' IDENTIFIED BY 'password' WITH GRANT OPTION;
 FLUSH PRIVILEGES;
+SELECT User FROM mysql.user;
 
-sudo systemctl status mariadb
+
 
 create database phpdasar;
 use phpdasar;
