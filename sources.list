@@ -1,0 +1,21 @@
+## distribution.
+#deb https://mirror.gi.co.id/ubuntu/ jammy universe
+#deb https://mirror.gi.co.id/ubuntu/ jammy-updates universe
+#deb https://mirror.gi.co.id/ubuntu/ jammy multiverse
+#deb https://mirror.gi.co.id/ubuntu/ jammy-updates multiverse
+#deb https://mirror.gi.co.id/ubuntu/ jammy-backports main restricted universe multiverse
+#deb https://mirror.gi.co.id/ubuntu/ jammy-security main restricted
+#deb https://mirror.gi.co.id/ubuntu/ jammy-security universe
+#deb https://mirror.gi.co.id/ubuntu/ jammy-security multiverse
+
+
+
+deb http://kartolo.sby.datautama.net.id/ubuntu/ jammy-updates main restricted
+deb http://kartolo.sby.datautama.net.id/ubuntu/ jammy universe
+deb http://kartolo.sby.datautama.net.id/ubuntu/ jammy-updates universe
+deb http://kartolo.sby.datautama.net.id/ubuntu/ jammy multiverse
+deb http://kartolo.sby.datautama.net.id/ubuntu/ jammy-updates multiverse
+deb http://kartolo.sby.datautama.net.id/ubuntu/ jammy-backports main restricted universe multiverse
+deb http://kartolo.sby.datautama.net.id/ubuntu/ jammy-security main restricted
+deb http://kartolo.sby.datautama.net.id/ubuntu/ jammy-security universe
+deb http://kartolo.sby.datautama.net.id/ubuntu/ jammy-security multiverse
