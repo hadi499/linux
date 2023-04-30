@@ -1,0 +1,8 @@
+sudo subl /etc/apt/sources.list.d/official-package-repositories.list
+
+deb https://mirrors.ocf.berkeley.edu/linuxmint-packages vera main upstream import backport 
+
+deb http://kartolo.sby.datautama.net.id/ubuntu/ jammy main restricted universe multiverse
+deb http://kartolo.sby.datautama.net.id/ubuntu/ jammy-updates main restricted universe multiverse
+deb http://kartolo.sby.datautama.net.id/ubuntu/ jammy-backports main restricted universe multiverse
+deb http://security.ubuntu.com/ubuntu/ jammy-security main restricted universe multiverse
