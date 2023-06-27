@@ -19,3 +19,16 @@ deb http://kartolo.sby.datautama.net.id/ubuntu/ jammy-backports main restricted 
 deb http://kartolo.sby.datautama.net.id/ubuntu/ jammy-security main restricted
 deb http://kartolo.sby.datautama.net.id/ubuntu/ jammy-security universe
 deb http://kartolo.sby.datautama.net.id/ubuntu/ jammy-security multiverse
+
+
+
+deb http://buaya.klas.or.id/ubuntu/ jammy main restricted
+deb http://buaya.klas.or.id/ubuntu/ jammy-updates main restricted
+deb http://buaya.klas.or.id/ubuntu/ jammy universe
+deb http://buaya.klas.or.id/ubuntu/ jammy-updates universe
+deb http://buaya.klas.or.id/ubuntu/ jammy multiverse
+deb http://buaya.klas.or.id/ubuntu/ jammy-updates multiverse
+deb http://buaya.klas.or.id/ubuntu/ jammy-backports main restricted universe multiverse
+deb http://buaya.klas.or.id/ubuntu/ jammy-security main restricted
+deb http://buaya.klas.or.id/ubuntu/ jammy-security universe
+deb http://buaya.klas.or.id/ubuntu/ jammy-security multiverse
