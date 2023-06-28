@@ -8,4 +8,8 @@ end
 
 alias del "command rm -rf"
 
+fish_add_path /home/hadi/go/bin
+fish_add_path /home/hadi/golang/bin
+set -x GOPATH /home/hadi/golang
+
 set -U fish_user_paths /home/hadi/dev/tools/jdk-15.0.2/bin
