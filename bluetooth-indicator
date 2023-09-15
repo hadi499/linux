@@ -1,0 +1,14 @@
+sudo apt install libbluetooth-dev python3-dev
+
+#install pybluez
+pip3 install git+https://github.com/pybluez/pybluez.git#egg=pybluez
+
+git clone https://github.com/TheWeirdDev/Bluetooth_Headset_Battery_Level.git
+cd Bluetooth_Headset_Battery_Level
+
+
+bluetoothctl devices
+bluetoothctl info
+
+./bluetooth_battery.py DC:A6:B9:BC:8B:5D
+
