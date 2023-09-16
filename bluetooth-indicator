@@ -12,3 +12,11 @@ bluetoothctl info
 
 ./bluetooth_battery.py DC:A6:B9:BC:8B:5D
 
+--sakumini.sh--
+#!/bin/bash
+echo "disconnect DC:A6:B9:BC:8B:5D" | bluetoothctl
+sleep 3
+python3 ~/Bluetooth_Headset_Battery_Level/bluetooth_battery.py DC:A6:B9:BC:8B:5D
+sleep 3
+echo "connect DC:A6:B9:BC:8B:5D" | bluetoothctl
+exit
